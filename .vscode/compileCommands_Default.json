@@ -1,0 +1,402 @@
+[
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\ClientConnectionStrategies.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Private\\ClientConnectionStrategies.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Private\\Clients\\ClientFactory.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Private\\Clients\\Strategies\\HttpClient.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Private\\Clients\\Strategies\\TcpClient.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Private\\Clients\\Strategies\\UdpClient.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Private\\Clients\\Strategies\\Utils\\ConnectionUtils.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Private\\Clients\\Strategies\\WsClient.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Private\\DataAssets\\DefaultFieldsFilling.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Private\\UI\\ClientFormSwitch.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Private\\UI\\ClientFormUtils.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Private\\UI\\ClientHUD.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Private\\UI\\RequestFormWidget.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Public\\ClientConnectionStrategies.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Public\\Clients\\ClientFactory.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Public\\Clients\\ClientLabels.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Public\\Clients\\DataContainers\\RequestData.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Public\\Clients\\DataContainers\\ResponseData.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Public\\Clients\\Interfaces\\Client.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Public\\Clients\\Interfaces\\ClientContainer.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Public\\Clients\\Interfaces\\Connection.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Public\\Clients\\Strategies\\HttpClient.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Public\\Clients\\Strategies\\TcpClient.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Public\\Clients\\Strategies\\UdpClient.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Public\\Clients\\Strategies\\Utils\\ClientOptions.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Public\\Clients\\Strategies\\Utils\\ConnectionType.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Public\\Clients\\Strategies\\Utils\\ConnectionUtils.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Public\\Clients\\Strategies\\WsClient.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Public\\DataAssets\\ClientCollection.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Public\\DataAssets\\DefaultFieldsFilling.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Public\\UI\\ClientFormSwitch.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Public\\UI\\ClientFormUtils.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Public\\UI\\ClientFormViewer.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Public\\UI\\ClientHUD.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Public\\UI\\RequestFormWidget.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Source\\RqstClient\\Private\\ActivatorCircle\\ConnectionStrategyComponent.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\RqstClient.266.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Source\\RqstClient\\Private\\ClientHandler\\ClientSender.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\RqstClient.266.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Source\\RqstClient\\Private\\RqstClient.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\RqstClient.266.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Source\\RqstClient\\Private\\RqstClientCharacter.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\RqstClient.266.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Source\\RqstClient\\Private\\RqstClientGameMode.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\RqstClient.266.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Source\\RqstClient\\Private\\UI\\FormTransitionWidget.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\RqstClient.266.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Source\\RqstClient\\Public\\ActivatorCircle\\ConnectionStrategyComponent.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\RqstClient.266.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Source\\RqstClient\\Public\\ActivatorCircle\\StrategyActivator.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\RqstClient.266.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Source\\RqstClient\\Public\\ClientHandler\\ClientSender.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\RqstClient.266.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Source\\RqstClient\\Public\\ClientHandler\\Interactive.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\RqstClient.266.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Source\\RqstClient\\Public\\RqstClient.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\RqstClient.266.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Source\\RqstClient\\Public\\RqstClientCharacter.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\RqstClient.266.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Source\\RqstClient\\Public\\RqstClientGameMode.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\RqstClient.266.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Source\\RqstClient\\Public\\UI\\FormTransitionWidget.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\RqstClient.266.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Source\\RqstClient\\RqstClient.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\RqstClient.266.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	}
+]

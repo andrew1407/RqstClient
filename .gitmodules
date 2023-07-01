@@ -1,0 +1,3 @@
+[submodule "Plugins/ClientConnectionStrategies"]
+	path = Plugins/ClientConnectionStrategies
+	url = https://github.com/Andrew1407/ClientConnectionStrategies
