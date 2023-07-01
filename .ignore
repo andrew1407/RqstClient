@@ -1,0 +1,10 @@
+/.vscode
+/Content
+/DerivedDataCache
+/Intermediate
+/Platforms
+/Saved
+/Plugins/ClientConnectionStrategies/.git
+/Plugins/ClientConnectionStrategies/Content
+/Plugins/ClientConnectionStrategies/Intermediate
+/Plugins/ClientConnectionStrategies/TestServersApp
