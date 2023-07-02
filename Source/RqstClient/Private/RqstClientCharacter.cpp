@@ -81,7 +81,7 @@ void ARqstClientCharacter::BeginPlay()
 //////////////////////////////////////////////////////////////////////////
 // Input
 
-void ARqstClientCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
+void ARqstClientCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	UEnhancedInputComponent* EnhancedInputComponent = CastChecked<UEnhancedInputComponent>(PlayerInputComponent);
 

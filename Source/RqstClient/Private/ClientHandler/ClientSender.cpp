@@ -35,7 +35,7 @@ AClientSender::AClientSender(const FObjectInitializer& ObjectInitializer) : Supe
 	}
 
 	const FColor InputColor { 255, 55, 0 };
-	CreateTextBlock(InterractionText, GET_MEMBER_NAME_CHECKED(AClientSender, InterractionText), TEXT("E"), FColor(255, 0, 72), 210);
+	CreateTextBlock(InterractionText, GET_MEMBER_NAME_CHECKED(AClientSender, InterractionText), TEXT("E (B)"), FColor(255, 0, 72), 210);
 	CreateTextBlock(DenominationsText, GET_MEMBER_NAME_CHECKED(AClientSender, DenominationsText), TEXT("Denominations: ..."), InputColor, 380);
 	CreateTextBlock(AmountText, GET_MEMBER_NAME_CHECKED(AClientSender, AmountText), TEXT("Amount: ..."), InputColor, 320);
 	CreateTextBlock(ResultText, GET_MEMBER_NAME_CHECKED(AClientSender, ResultText), TEXT("Result: NaN"), FColor::White, 260);
@@ -66,10 +66,10 @@ void AClientSender::Interract_Implementation()
 	EClientLabels Label = IClientContainer::Execute_GetClientType(GameMode);
 	if (Label == EClientLabels::NONE) return;
 	UObject* Client = IClientContainer::Execute_GetClient(GameMode);
-	bool IsClientValid = IsValid(Client) && UKismetSystemLibrary::DoesImplementInterface(Client, UClient::StaticClass());
+	bool IsAbleToSend = IsValid(Client) && UKismetSystemLibrary::DoesImplementInterface(Client, UClient::StaticClass());
 	bool IsConnection = UKismetSystemLibrary::DoesImplementInterface(Client, UConnection::StaticClass());
-	if (IsConnection) IsClientValid = IsClientValid && IConnection::Execute_Connected(Client);
-	if (!IsClientValid) return;
+	if (IsConnection && IsAbleToSend) IsAbleToSend = IConnection::Execute_Connected(Client);
+	if (!IsAbleToSend) return;
 	IsActionTriggered = true;
 	FResponseDeledate ResponseDeledate;
 	ResponseDeledate.BindDynamic(this, &AClientSender::OnDataReceived);
