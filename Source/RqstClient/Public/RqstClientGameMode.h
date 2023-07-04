@@ -26,6 +26,9 @@ protected:
 	virtual void BeginPlay() override;
 
 private:
+	UPROPERTY(EditDefaultsOnly, Category = "RqstClientGameMode|StrategyClient", meta = (AllowPrivateAccess = true))
+	TSubclassOf<UClientFactory> FactoryClass;
+
 	UPROPERTY(BlueprintReadOnly, Category = "RqstClientGameMode|StrategyClient", meta = (AllowPrivateAccess = true))
 	TObjectPtr<UClientFactory> ClientFactory;
 
