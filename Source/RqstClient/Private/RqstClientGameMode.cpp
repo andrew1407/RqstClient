@@ -12,12 +12,14 @@ ARqstClientGameMode::ARqstClientGameMode()
 	static ConstructorHelpers::FClassFinder<APawn> PlayerPawnBPClass(TEXT("/Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter"));
 	if (PlayerPawnBPClass.Class) DefaultPawnClass = PlayerPawnBPClass.Class;
 
-	ClientFactory = CreateDefaultSubobject<UClientFactory>(TEXT("ClientFactory"));
+	FactoryClass = UClientFactory::StaticClass();
 }
 
 void ARqstClientGameMode::BeginPlay()
 {
 	Super::BeginPlay();
+
+	ClientFactory = NewObject<UClientFactory>(this, FactoryClass ? FactoryClass : UClientFactory::StaticClass(), TEXT("ClientFactory"));
 }
 
 bool ARqstClientGameMode::SetClient_Implementation(EClientLabels Type)
