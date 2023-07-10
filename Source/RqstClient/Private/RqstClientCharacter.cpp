@@ -66,6 +66,7 @@ void ARqstClientCharacter::BeginPlay()
 	//Add Input Mapping Context
 	if (APlayerController* PlayerController = Cast<APlayerController>(Controller))
 	{
+		PlayerController->SetInputMode(FInputModeGameOnly());
 		UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PlayerController->GetLocalPlayer());
 		if (IsValid(Subsystem)) Subsystem->AddMappingContext(DefaultMappingContext, 0);
 	}
@@ -76,6 +77,7 @@ void ARqstClientCharacter::BeginPlay()
 		UMaterialInstanceDynamic* Dynamic = UMaterialInstanceDynamic::Create(Material, nullptr);
 		GetMesh()->SetMaterial(Id, Dynamic);
 	});
+
 }
 
 //////////////////////////////////////////////////////////////////////////

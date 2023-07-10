@@ -16,6 +16,7 @@ ColorCollection = unreal.Map[unreal.ClientLabels, unreal.Color]
 ActivatorLabels = Optional[Iterable[str]]
 ActivatorsToHandle = Union[str, Iterable[str]]
 
+
 def get_client_labels() -> dict[str, unreal.ClientLabels]:
     keys = 'NONE', 'HTTP', 'WS', 'UDP', 'TCP'
     return { k: getattr(unreal.ClientLabels, k) for k in keys }

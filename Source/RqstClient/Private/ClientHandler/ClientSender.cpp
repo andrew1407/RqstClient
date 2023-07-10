@@ -2,8 +2,10 @@
 
 
 #include "ClientHandler/ClientSender.h"
-#include "GameFramework/GameModeBase.h"
 #include "Kismet/KismetSystemLibrary.h"
+
+#include "GameFramework/GameModeBase.h"
+#include "GameFramework/Character.h"
 
 #include "Components/StaticMeshComponent.h"
 #include "Components/BoxComponent.h"
@@ -28,11 +30,7 @@ AClientSender::AClientSender(const FObjectInitializer& ObjectInitializer) : Supe
 		StaticMesh->SetupAttachment(RootComponent);
 
 	if (BoxCollision = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxCollision")))
-	{
 		BoxCollision->SetupAttachment(RootComponent);
-		BoxCollision->OnComponentBeginOverlap.AddDynamic(this, &AClientSender::BoxBeginOverlap);
-		BoxCollision->OnComponentEndOverlap.AddDynamic(this, &AClientSender::BoxEndOverlap);
-	}
 
 	const FColor InputColor { 255, 55, 0 };
 	CreateTextBlock(InterractionText, GET_MEMBER_NAME_CHECKED(AClientSender, InterractionText), TEXT("E (B)"), FColor(255, 0, 72), 210);
@@ -133,13 +131,12 @@ void AClientSender::BeginPlay()
 	}
 }
 
-void AClientSender::BoxBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
-	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+void AClientSender::NotifyActorBeginOverlap(AActor* OtherActor)
 {
-	InterractionText->SetVisibility(true);
+	if (auto Character = Cast<ACharacter>(OtherActor)) InterractionText->SetVisibility(true);
 }
 
-void AClientSender::BoxEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+void AClientSender::NotifyActorEndOverlap(AActor* OtherActor)
 {
-	InterractionText->SetVisibility(false);
+	if (auto Character = Cast<ACharacter>(OtherActor)) InterractionText->SetVisibility(false);
 }

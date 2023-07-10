@@ -26,6 +26,8 @@ public:
 	// Sets default values for this actor's properties
 	AClientSender(const FObjectInitializer& ObjectInitializer);
 
+	virtual void NotifyActorBeginOverlap(AActor* OtherActor) override;
+	virtual void NotifyActorEndOverlap(AActor* OtherActor) override;
 	virtual void Interract_Implementation();
 
 	UFUNCTION(BlueprintCallable)
@@ -70,13 +72,6 @@ private:
 	#pragma endregion
 
 	FRequestData DataToSend; 
-
-	UFUNCTION()
-	void BoxBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
-		UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
-
-	UFUNCTION()
-    void BoxEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 
 	UFUNCTION()
 	void OnDataReceived(const FResponseData& ResponseData, bool bSuccess);
