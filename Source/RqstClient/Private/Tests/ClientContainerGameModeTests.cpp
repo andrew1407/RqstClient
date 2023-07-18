@@ -1,6 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#if WITH_AUTOMATION_TESTS
+#if (WITH_AUTOMATION_TESTS && WITH_EDITOR)
 
 #include "Tests/ClientContainerGameModeTests.h"
 #include "CoreMinimal.h"

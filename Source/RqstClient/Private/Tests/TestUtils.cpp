@@ -1,4 +1,4 @@
-#if WITH_AUTOMATION_TESTS
+#if (WITH_AUTOMATION_TESTS && WITH_EDITOR)
 
 #include "Tests/TestUtils.h"
 

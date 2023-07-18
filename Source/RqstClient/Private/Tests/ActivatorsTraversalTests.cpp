@@ -1,7 +1,9 @@
-#if WITH_AUTOMATION_TESTS
+#if (WITH_AUTOMATION_TESTS && WITH_EDITOR)
 
 #include "Tests/ActivatorsTraversalTests.h"
 #include "CoreMinimal.h"
+#include "GameFramework/Actor.h"
+
 #include "Misc/AutomationTest.h"
 #include "Tests/AutomationCommon.h"
 
