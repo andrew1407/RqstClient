@@ -25,4 +25,4 @@ def switch():
     }
     world = unreal.get_editor_subsystem(unreal.UnrealEditorSubsystem).get_editor_world()
     name = world.get_name()
-    if name in load_destinations: open(load_destinations[name])
+    open(load_destinations.get(name, CLIENT_SWITCH_FORM_MAP))

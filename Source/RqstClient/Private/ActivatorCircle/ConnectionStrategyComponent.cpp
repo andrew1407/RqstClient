@@ -73,8 +73,9 @@ void UConnectionStrategyComponent::SetClient(const FString& Host, int32 Port, AG
 	bool IsConnection = CheckStrategyConnection(Client);
 	if (!IsConnection) return Character->SetMaterialColor(DefineClientColor(Label));
 	FConnectionDelegate ConnectionDelegate;
-	ConnectionEvent = [this, Character] (EClientLabels Type, bool bSuccess) -> void
+	ConnectionEvent = [this, Character, GameMode] (EClientLabels Type, bool bSuccess) -> void
 	{
+		if (IClientContainer::Execute_GetClientType(GameMode) != Type) return;
 		const FLinearColor Color = bSuccess ? DefineClientColor(Type) : ClientCollection->ErrorColor.ReinterpretAsLinear();
 		Character->SetMaterialColor(Color);
 	};

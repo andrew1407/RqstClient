@@ -22,6 +22,8 @@ public:
 	FORCEINLINE EClientLabels GetClientType_Implementation() { return ClientType; }
 	FORCEINLINE UObject* GetClient_Implementation() { return Client.Get(); }
 
+	FORCEINLINE UClientFactory* GetClientFactory() const { return ClientFactory.Get(); }
+
 protected:
 	virtual void BeginPlay() override;
 

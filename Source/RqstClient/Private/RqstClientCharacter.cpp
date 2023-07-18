@@ -153,15 +153,11 @@ void ARqstClientCharacter::Interact()
 {
 	TArray<AActor*> OverlappingActors;
 	GetCapsuleComponent()->GetOverlappingActors(OverlappingActors);
-	AActor* ActorToInteract = nullptr;
-	for (auto& Actor : OverlappingActors)
+	AActor** FoundInteractive = OverlappingActors.FindByPredicate([] (AActor* Actor)
 	{
-		bool IsInteractive = UKismetSystemLibrary::DoesImplementInterface(Actor, UInteractive::StaticClass());
-		if (!IsInteractive) continue;
-		ActorToInteract = Actor;
-		break;
-	}
-	if (IsValid(ActorToInteract)) IInteractive::Execute_Interract(ActorToInteract);
+		return UKismetSystemLibrary::DoesImplementInterface(Actor, UInteractive::StaticClass());
+	});
+	if (FoundInteractive) IInteractive::Execute_Interract(*FoundInteractive);
 }
 
 void ARqstClientCharacter::MapByMaterialIndices(const TFunctionRef<void(uint8)> Mapper)
