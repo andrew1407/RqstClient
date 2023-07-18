@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "UObject/Interface.h"
+#include "Clients/ClientLabels.h"
 #include "StrategyActivator.generated.h"
 
 // This class does not need to be modified.
@@ -21,6 +22,12 @@ class RQSTCLIENT_API IStrategyActivator
 	GENERATED_BODY()
 
 public:
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "IStrategyActivator")
+	EClientLabels GetClientType();
+
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "IStrategyActivator")
+	void SetClientType(EClientLabels Label);
+
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "IStrategyActivator")
 	void SetShiningColor(const FLinearColor& Color);
 

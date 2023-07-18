@@ -36,7 +36,6 @@ private:
 	TUniqueFunction<void(EClientLabels, bool)> ConnectionEvent;
 	TUniqueFunction<void(EClientLabels, bool)> DisonnectionEvent;
 
-
 	FORCEINLINE bool CheckStrategyConnection(UObject* Client);
 	void SetClient(const FString& Host, int32 Port, AGameModeBase* GameMode, EClientLabels Label, ARqstClientCharacter* Character);
 	FName GetLabelName(EClientLabels Label) const;
