@@ -69,9 +69,9 @@ void AClientSender::Interract_Implementation()
 	if (IsConnection && IsAbleToSend) IsAbleToSend = IConnection::Execute_Connected(Client);
 	if (!IsAbleToSend) return;
 	IsActionTriggered = true;
-	FResponseDeledate ResponseDeledate;
-	ResponseDeledate.BindDynamic(this, &AClientSender::OnDataReceived);
-	IClient::Execute_SetResponseDelegate(Client, ResponseDeledate);
+	FResponseDelegate ResponseDelegate;
+	ResponseDelegate.BindDynamic(this, &AClientSender::OnDataReceived);
+	IClient::Execute_SetResponseDelegate(Client, ResponseDelegate);
 	IClient::Execute_Send(Client, DataToSend);
 }
 

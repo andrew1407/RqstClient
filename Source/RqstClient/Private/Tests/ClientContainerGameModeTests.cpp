@@ -45,7 +45,7 @@ END_DEFINE_SPEC(FClientContainerGameMode);
 
 void FClientContainerGameMode::Define()
 {
-    Describe("HasValidLonatinerLogic", [this]
+    Describe("HasValidConatinerLogic", [this]
     {
         It("HasUninitializedDefaultValues", [this]
         {

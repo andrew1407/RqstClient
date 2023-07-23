@@ -40,38 +40,6 @@
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
 	},
 	{
-		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Private\\Clients\\Strategies\\Test\\HttpTestClient.cpp",
-		"arguments": [
-			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
-			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
-		],
-		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
-	},
-	{
-		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Private\\Clients\\Strategies\\Test\\TcpTestClient.cpp",
-		"arguments": [
-			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
-			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
-		],
-		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
-	},
-	{
-		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Private\\Clients\\Strategies\\Test\\UdpTestClient.cpp",
-		"arguments": [
-			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
-			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
-		],
-		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
-	},
-	{
-		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Private\\Clients\\Strategies\\Test\\WsTestClient.cpp",
-		"arguments": [
-			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
-			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
-		],
-		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
-	},
-	{
 		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Private\\Clients\\Strategies\\UdpClient.cpp",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
@@ -201,6 +169,14 @@
 	},
 	{
 		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Public\\Clients\\Strategies\\TcpClient.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Plugins\\ClientConnectionStrategies\\Source\\ClientConnectionStrategies\\Public\\Clients\\Strategies\\Test\\ClientTestData.h",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
 			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\ClientConnectionStrategies.26.rsp"
@@ -392,6 +368,14 @@
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
 	},
 	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Source\\RqstClient\\Private\\Tests\\ClientSenderTests.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\RqstClient.266.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
 		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Source\\RqstClient\\Private\\Tests\\TestUtils.cpp",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
@@ -440,6 +424,14 @@
 		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
 	},
 	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Source\\RqstClient\\Public\\Input\\CharacterInputActions.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\RqstClient.266.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
 		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Source\\RqstClient\\Public\\RqstClient.h",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
@@ -473,6 +465,14 @@
 	},
 	{
 		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Source\\RqstClient\\Public\\Tests\\ClientContainerGameModeTests.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
+			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\RqstClient.266.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.2\\Engine\\Source"
+	},
+	{
+		"file": "X:\\Progects\\UnrealEngine\\RqstClient\\Source\\RqstClient\\Public\\Tests\\ClientSenderTests.h",
 		"arguments": [
 			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.35.32215\\bin\\Hostx64\\x64\\cl.exe",
 			"@X:\\Progects\\UnrealEngine\\RqstClient\\.vscode\\compileCommands_Default\\RqstClient.266.rsp"
