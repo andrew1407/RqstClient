@@ -90,19 +90,22 @@ void ARqstClientCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInpu
 	if (!IsValid(EnhancedInputComponent)) return;
 		
 	//Jumping
-	if (IsValid(JumpAction))
+	if (IsValid(InputActions.JumpAction))
 	{
-		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Triggered, this, &ACharacter::Jump);
-		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Completed, this, &ACharacter::StopJumping);
+		EnhancedInputComponent->BindAction(InputActions.JumpAction, ETriggerEvent::Triggered, this, &ACharacter::Jump);
+		EnhancedInputComponent->BindAction(InputActions.JumpAction, ETriggerEvent::Completed, this, &ACharacter::StopJumping);
 	}
 
 	//Moving
-	if (IsValid(MoveAction)) EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &ARqstClientCharacter::Move);
+	if (IsValid(InputActions.MoveAction))
+		EnhancedInputComponent->BindAction(InputActions.MoveAction, ETriggerEvent::Triggered, this, &ARqstClientCharacter::Move);
 
 	//Looking
-	if (IsValid(LookAction)) EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &ARqstClientCharacter::Look);
+	if (IsValid(InputActions.LookAction))
+		EnhancedInputComponent->BindAction(InputActions.LookAction, ETriggerEvent::Triggered, this, &ARqstClientCharacter::Look);
 
-	if (IsValid(InteractAction)) EnhancedInputComponent->BindAction(InteractAction, ETriggerEvent::Started, this, &ARqstClientCharacter::Interact);
+	if (IsValid(InputActions.InteractAction))
+		EnhancedInputComponent->BindAction(InputActions.InteractAction, ETriggerEvent::Started, this, &ARqstClientCharacter::Interact);
 }
 
 void ARqstClientCharacter::Move(const FInputActionValue& Value)

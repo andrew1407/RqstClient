@@ -2,6 +2,7 @@
 
 #include "Tests/ActivatorsTraversalTests.h"
 #include "CoreMinimal.h"
+#include "Kismet/GameplayStatics.h"
 #include "GameFramework/Actor.h"
 
 #include "Misc/AutomationTest.h"
@@ -11,18 +12,11 @@
 #include "GameFramework/Character.h"
 
 #include "Tests/TestUtils.h"
-#include "Kismet/GameplayStatics.h"
+#include "DataAssets/ClientCollection.h"
 
 #include "Clients/Interfaces/ClientContainer.h"
 #include "Clients/ClientLabels.h"
 #include "Clients/ClientFactory.h"
-
-#include "Clients/Strategies/Test/HttpTestClient.h"
-#include "Clients/Strategies/Test/WsTestClient.h"
-#include "Clients/Strategies/Test/UdpTestClient.h"
-#include "Clients/Strategies/Test/TcpTestClient.h"
-
-#include "DataAssets/ClientCollection.h"
 
 #include "RqstClientGameMode.h"
 #include "ActivatorCircle/StrategyActivator.h"
@@ -35,60 +29,23 @@ namespace
     constexpr char* ACTIVATOR_BLUEPRINT_PATH = "/Script/Engine.Blueprint'/Game/Core/Blueprints/Gameplay/BP_StrategyActivator.BP_StrategyActivator'";
     constexpr char* CLIENT_STYLES_PATH = "/ClientConnectionStrategies/DataAssets/DA_ClientCollection";
 
-    TArray<FName> GetOrderedNames(const TMap<FName, EClientLabels>& Collection)
+    constexpr float PAUSE_DURATION = 1;
+}
+
+DEFINE_LATENT_AUTOMATION_COMMAND_FOUR_PARAMETER(FAvtivatorTimeoutInterval, float, Duration, uint8, Index, uint8, Count, TFunction<void(uint8)>, OnCheck);
+bool FAvtivatorTimeoutInterval::Update()
+{
+    if (FPlatformTime::Seconds() - StartTime < Duration) return false;
+    if (Index < Count)
     {
-        TSet<FName> NamesSet;
-        Collection.GetKeys(NamesSet);
-        TArray<FName> Names = NamesSet.Array();
-        int32 NoneIndex = Names.IndexOfByPredicate([] (const FName& Name) { return Name.IsEqual(TEXT("NONE")); });
-        if (NoneIndex != INDEX_NONE)
-        {
-            const FName NoneName = Names[NoneIndex];
-            Names.RemoveAt(NoneIndex);
-            Names.Add(NoneName);
-        }
-        return MoveTemp(Names);
+        OnCheck(Index);
+        ADD_LATENT_AUTOMATION_COMMAND(FAvtivatorTimeoutInterval(Duration, Index + 1, Count, OnCheck));
     }
-
-    FName GetNameByLabel(const TMap<FName, EClientLabels>& Collection, EClientLabels Label)
+    else
     {
-        for (const auto& Pair : Collection)
-            if (Pair.Value == Label) return Pair.Key;
-        return NAME_None;
+        ADD_LATENT_AUTOMATION_COMMAND(FExitGameCommand);
     }
-
-    TArray<AActor*> SpawnActors(const TArray<EClientLabels>& PresentActivators, UWorld* World, TSubclassOf<AActor>& ActivatorClass, const UClientCollection* ClientStyles)
-    {
-        TArray<AActor*> Actors;
-        const FName ActivatorsContainer = "Activators";
-        FTransform Transform;
-        Transform.SetLocation(FVector(180, -730, 0));
-        const auto Distance = FVector(0, 400, 0);
-        for (auto Label : PresentActivators)
-        {
-            FTransform SpawnTransform = Transform;
-            auto Activator = World->SpawnActorDeferred<AActor>(ActivatorClass, Transform);
-            const FName Name = GetNameByLabel(ClientStyles->ClientNames, Label);
-            const FString LabelName = FString::Printf(TEXT("Activator_%s"), *Name.ToString());
-
-            Activator->SetActorLabel(LabelName);
-            Activator->SetFolderPath(ActivatorsContainer);
-            IStrategyActivator::Execute_SetClientType(Activator, Label);
-            Activator->FinishSpawning(SpawnTransform);
-
-            Transform.SetLocation(Transform.GetLocation() + Distance);
-            Actors.Add(Activator);
-        }
-        return MoveTemp(Actors);
-    }
-
-    void SetFactoryStubClasses(UClientFactory* ClientFactory)
-    {
-        ClientFactory->SetHttpInstance(UHttpTestClient::StaticClass());
-        ClientFactory->SetWsInstance(UWsTestClient::StaticClass());
-        ClientFactory->SetUdpInstance(UUdpTestClient::StaticClass());
-        ClientFactory->SetTcpInstance(UTcpTestClient::StaticClass());
-    }
+    return true;
 }
 
 BEGIN_DEFINE_SPEC(FActivatorsTraversal, "RqstClient.ActivatorsTraversal",
@@ -121,7 +78,7 @@ private:
             TestNotNull(FString::Printf(TEXT("Character dynamic mes present id = %d"), MeshId), Material);
             FLinearColor ResultColor;
             bool bHasTint = Material->GetVectorParameterValue(TEXT("Tint"), ResultColor);
-            bool bEqual = AreLinearColorsEqual(ResultColor, ExpectedColor);
+            bool bEqual = ResultColor.Equals(ExpectedColor);
 
             TestTrue(FString::Printf(TEXT("MAterial with id = %d has tint"), MeshId), bHasTint);
             TestTrue(FString::Printf(TEXT("MAterial with id = %d has valid color"), MeshId), bEqual);
@@ -129,22 +86,6 @@ private:
     }
 
 END_DEFINE_SPEC(FActivatorsTraversal);
-
-DEFINE_LATENT_AUTOMATION_COMMAND_FOUR_PARAMETER(FAvtivatorTimeoutInterval, float, Duration, int8, Index, int8, Count, TFunction<void(int8)>, OnCheck);
-bool FAvtivatorTimeoutInterval::Update()
-{
-    if (FPlatformTime::Seconds() - StartTime < Duration) return false;
-    if (Index < Count)
-    {
-        OnCheck(Index);
-        ADD_LATENT_AUTOMATION_COMMAND(FAvtivatorTimeoutInterval(Duration, Index + 1, Count, OnCheck));
-    }
-    else
-    {
-        ADD_LATENT_AUTOMATION_COMMAND(FExitGameCommand);
-    }
-    return true;
-}
 
 void FActivatorsTraversal::Define()
 {
@@ -169,7 +110,7 @@ void FActivatorsTraversal::Define()
         TestNotNull("Game mode client factory exists", ClientFactory);
         SetFactoryStubClasses(ClientFactory);
 
-        TArray<AActor*> Activators = SpawnActors(PresentActivators, World, ActivatorClass, ClientStyles);
+        TArray<AActor*> Activators = SpawnActivators(PresentActivators, World, ActivatorClass, ClientStyles);
         TestTrueExpr(PresentActivators.Num() == Activators.Num());
         for (const auto& Actor : Activators)
             TestNotNull(FString::Printf(TEXT("Activator \"%d\" swapned"), *Actor->GetActorLabel()), Actor);
@@ -177,11 +118,10 @@ void FActivatorsTraversal::Define()
         ACharacter* Character = World->GetFirstPlayerController()->GetCharacter();
         TestNotNull("Character exists", Character);
 
-        const int8 DurationPeriod = 1;
-        const int8 ActivatorsCount = Activators.Num();
+        const uint8 ActivatorsCount = Activators.Num();
         TArray<FName> Names = GetOrderedNames(ClientStyles->ClientNames);
 
-        const auto OnCheck = [this, ClientStyles, Character, GameMode, Activators = MoveTemp(Activators), Names = MoveTemp(Names)] (int8 Index) -> void
+        const auto OnCheck = [this, ClientStyles, Character, GameMode, Activators = MoveTemp(Activators), Names = MoveTemp(Names)] (uint8 Index) -> void
         {
             AActor* Activator = Activators[Index];
             const EClientLabels ExpentedLabel = IStrategyActivator::Execute_GetClientType(Activator);
@@ -191,7 +131,9 @@ void FActivatorsTraversal::Define()
             bool NameValid = ExpentedLabel == EClientLabels::NONE ? !Name.IsNone() : Name.IsNone();
             TestFalse(NameWhat, NameValid);
 
-            Character->SetActorLocation(Activator->GetActorLocation());
+            FVector ActivatorLocation = Activator->GetActorLocation();
+            ActivatorLocation.Z += 150;      // Add height not to fall under ground
+            Character->SetActorLocation(ActivatorLocation);
             const EClientLabels ResultLabel = IClientContainer::Execute_GetClientType(GameMode);
             const FString LabelWhat = FString::Printf(TEXT("\"%d\" activator with type \"%d\" set state type \"%d\""), *Activator->GetActorLabel(), ResultLabel, ExpentedLabel);
             TestEqual(LabelWhat, ResultLabel, ExpentedLabel);
@@ -201,7 +143,7 @@ void FActivatorsTraversal::Define()
             CheckMaterialColors(Character, ExpectedColor.ReinterpretAsLinear(), MeshIndices);
         };
 
-        ADD_LATENT_AUTOMATION_COMMAND(FAvtivatorTimeoutInterval(DurationPeriod, 0, ActivatorsCount, OnCheck));
+        ADD_LATENT_AUTOMATION_COMMAND(FAvtivatorTimeoutInterval(PAUSE_DURATION, 0, ActivatorsCount, OnCheck));
     });
 }
 
