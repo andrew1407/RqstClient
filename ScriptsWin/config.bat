@@ -1,6 +1,6 @@
 @echo off
 
-set UE_VERSION=5.2
+set UE_VERSION=5.3
 set UE_ROOT=C:\Program Files\Epic Games\UE_%UE_VERSION%\
 set SCRIPTS_ROOT=%UE_ROOT%Engine\Build\BatchFiles\
 

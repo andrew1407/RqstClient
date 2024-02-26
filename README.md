@@ -4,7 +4,7 @@
 
 The project made with Unreal Engine 5.2 as a showcase for client connection strategies (HTTP, WS, UDP, TCP) **[plugin](https://github.com/Andrew1407/ClientConnectionStrategies)**. It shows both UI and gameplay implementations of the strategies. 
 
-Address options (port & host) can be passed via input text boxes or command-line arguments (**=host=** and **-port=**) for a .exe launch file.
+Address options (port & host) can be passed via input text boxes or command-line arguments (**-host=** and **-port=**) for .exe launch file.
 
 ## Plugins (Submodules)
 
@@ -67,3 +67,97 @@ or (from the ScriptsWin dir):
 ```
 
 An optional flag here is a build mode which is set as **"Shipping"** by default; can be defined as **"Development"** as well.
+
+## Usage demonstartion
+
+### 1. Client form
+
+Default form state:
+
+![Default form](./Doc/Resources/ClientForm/default.png)
+
+Client selector dropdown:
+
+![Client selector](./Doc/Resources/ClientForm/client-selector.png)
+
+HTTP client usage:
+
+![http client](./Doc/Resources/ClientForm/http.png)
+
+WS client usage:
+
+![ws client](./Doc/Resources/ClientForm/ws.png)
+
+UDP client usage:
+
+![udp client](./Doc/Resources/ClientForm/udp.png)
+
+TCP client usage:
+
+![tcp client](./Doc/Resources/ClientForm/tcp.png)
+
+Form is closed and user is able to switch a [playground level](#2-clients-playground):
+
+![Closed form](./Doc/Resources/ClientForm/form-closed.png)
+
+### 2. Clients playground
+
+Defalt spawn ay the start:
+
+![Playground default](./Doc/Resources/ClientsPlayground/default.png)
+
+A trigger to make a request via chosen cleint:
+
+![Default request](./Doc/Resources/ClientsPlayground/default-request.png)
+
+A trigger to make a request via chosen cleint (protocol):
+
+![Default request](./Doc/Resources/ClientsPlayground/default-request.png)
+
+Choose HTTP client:
+
+![http client](./Doc/Resources/ClientsPlayground/http-trigger.png)
+
+Make a request using HTTP client:
+
+![http request](./Doc/Resources/ClientsPlayground/http-request.png)
+
+Choose WS client:
+
+![ws client](./Doc/Resources/ClientsPlayground/ws-trigger.png)
+
+Make a request using WS client:
+
+![ws request](./Doc/Resources/ClientsPlayground/ws-request.png)
+
+Choose UDP client:
+
+![udp client](./Doc/Resources/ClientsPlayground/udp-trigger.png)
+
+Make a request using UDP client:
+
+![ucp request](./Doc/Resources/ClientsPlayground/udp-request.png)
+
+Choose TCP client:
+
+![TCP client](./Doc/Resources/ClientsPlayground/tcp-trigger.png)
+
+Make a request using TCP client:
+
+![tcp request](./Doc/Resources/ClientsPlayground/tcp-request.png)
+
+Clear a chosen client:
+
+![Clear client](./Doc/Resources/ClientsPlayground/clear-trigger.png)
+
+Client connection error:
+
+![Connection error](./Doc/Resources/ClientsPlayground/error-trigger.png)
+
+Client request error:
+
+![Request error](./Doc/Resources/ClientsPlayground/error-request.png)
+
+Go to the [client form](#1-client-form) level:
+
+![Go to the client form level](./Doc/Resources/ClientsPlayground/client-form-portal.png)
