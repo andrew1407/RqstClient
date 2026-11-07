@@ -1,0 +1,6 @@
+{
+  "description": "Third-party content packs the project uses but can't redistribute. They're git-ignored: add each one to the project from Fab (Epic Games Launcher > Fab Library > Add to project) so it lands in the listed Content dir.",
+  "packs": [
+    { "dir": "Content/FXVarietyPack", "name": "FX Variety Pack", "source": "Fab" }
+  ]
+}

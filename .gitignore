@@ -206,3 +206,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Third-party content packs (Fab / Marketplace, not redistributable): see ThirdPartyAssets.json
+Content/FXVarietyPack/

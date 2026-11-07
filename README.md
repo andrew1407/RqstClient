@@ -20,6 +20,10 @@ And update them:
 git submodule update
 ```
 
+## Third-party content
+
+The **FX Variety Pack** (Marketplace / Fab content) can't be redistributed in source form, so it isn't in the repo (it's git-ignored). After cloning, add it to the project from Fab (Epic Games Launcher > Fab Library > **Add to project**) so it lands in the `Content/FXVarietyPack` dir; the pack is also listed in **[ThirdPartyAssets.json](./ThirdPartyAssets.json)**.
+
 ## Scripts
 
 The project contains three .bat scripts for Windows platforms for a process automation in the **[ScriptsWin](./ScriptsWin)** folder. All main configurable parameters are present in teh **[config.bat](./ScriptsWin/config.bat)** script.
